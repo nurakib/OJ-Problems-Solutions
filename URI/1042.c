@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main(){
-    int a, a2, b, b2, c, c2, max1, max2, max3;
+    int a, b, c, max1, max2, max3;
     scanf("%d %d %d", &a, &b, &c);
-    a2 = a; b2 = b; c2 = c;
     max1 = a > b && a > c ? a : b > c ? b : c;
     if(max1 == a){
             max2 = b > c ? b : c;
@@ -29,8 +28,8 @@ int main(){
     printf("%d\n", max2);
     printf("%d\n", max1);
     printf("\n");
-    printf("%d\n", a2);
-    printf("%d\n", b2);
-    printf("%d\n", c2);
+    printf("%d\n", a);
+    printf("%d\n", b);
+    printf("%d\n", c);
     return 0;
 }
