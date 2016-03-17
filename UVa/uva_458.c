@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+int main(){
 	char c;
 	while(scanf("%c", &c) != EOF){
 		if(c != '\n')
