@@ -1,17 +1,12 @@
 #include <stdio.h>
 int main(){
-    int a, b;
-    int n;
+    int n, a, b;
     scanf("%d", &n);
-    while(n != 0){
+    while(n--){
         scanf("%d %d", &a, &b);
-        if(a > b)
-            printf(">\n");
-        else if(b > a)
-            printf("<\n");
-        else
-            printf("=\n");
-        n--;
+        if(a > b) printf(">\n");
+        else if(b > a) printf("<\n");
+        else printf("=\n");
     }
     return 0;
 }
