@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 int n, num[105][105];
-int kadane(int ara[], int size){
+int kadane(int ara[], int n){
     int ans = ara[0], check = ara[0];
-    for(int i = 1; i < size; i++){
+    for(int i = 1; i < n; i++){
         check = max(ara[i], check + ara[i]);
         ans = max(ans, check);
     }
