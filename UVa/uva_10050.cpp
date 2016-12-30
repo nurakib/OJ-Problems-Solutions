@@ -12,12 +12,9 @@ int main(){
             for(int j = x; j <= d; j = j + x)
                 cal[j] = 1;
         }
-        for(int i = 1; i <= d; i++){
-            if((i + 1) % 7 == 0 || i % 7 == 0)
-                continue;
-            if(cal[i] == 1)
+        for(int i = 1; i <= d; i++)
+            if(!((i + 1) % 7 == 0 || i % 7 == 0) && cal[i] == 1)
                 ans++;
-        }
         cout << ans << endl;
     }
     return 0;
