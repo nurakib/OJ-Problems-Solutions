@@ -2,7 +2,6 @@
 using namespace std;
 vector <int> graph[205];
 int color[205];
-
 bool is_bipartite(int src){
     color[src] = 0;
     queue <int> q;
